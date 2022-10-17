@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+</head>
+<style>
+.box{
+    font-size: 25px;
+    text-align: center;
+     background-color: red;
+     color: white;
+     display: none;
+}
+@media only screen and ( max-width:300px) {
+    #box-1{
+        display: block;
+        /* background-color: aqua; */
+    }
+}
+
+@media only screen and (min-width:300px)and ( max-width:500px)  {
+    #box-1{
+        display: block;
+        /* background-color: blueviolet; */
+    }
+}
+
+@media only screen and (min-width:500px) and ( max-width:700px)  {
+    #box-1{
+        display: block;
+        /* background-color: gray; */
+    }
+}
+@media only screen and  (min-width:700px) and (max-width:900px)  {
+    #box-1{
+        display: block;
+        /* background-color: hotpink; */
+    }
+    @media only screen and  (min-width:900px) and (max-width:1200px)  {
+    #box-1{
+        display: block;
+        /* background-color: hotpink; */
+    }
+}
+}
+</style>
+<body>
+    <div class="box" id="box-1">mai ak laptop ho</div>
+    <div class="box" id="box-2">mai ak mobile ho</div>
+    <div class="box" id="box-3">mai ak computer ho</div>
+    <div class="box" id="box-4">mai ak tablet ho</div>
+</body>
+</html>
