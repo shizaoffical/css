@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: gray;
+    }
+    .flexcontainer{
+       display: flex;
+       flex-wrap: wrap;
+       /* flex-direction: row; */
+       /* flex-direction: column; */
+       /* flex-direction: row-reverse; */
+       /* flex-direction: column-reverse; */
+       /* justify-content: first baseline; */
+       justify-content: first baseline;
+      align-items: center;
+      text-align: center;
+
+      background-color: yellow;
+    }
+    .flexboxitem{
+        width: 200px;
+         margin: 10px;
+        background-color: gray;
+        border: 2px solid black;
+    }
+    .flexitem-1{
+      min-height: 100px;
+      flex-shrink: 0;
+      /* order: 1; */
+    }
+    .flexitem-2{
+     min-height: 200px;
+     flex-shrink: 0;
+     /* align-self: flex-end; */
+     /* order: 4; */
+    }
+    .flexitem-3{
+     min-height: 300px;
+     flex-grow: 1;
+     /* order: 2; */
+    }
+    .flexitem-4{
+     min-height: 400px;
+     flex-grow: 1;
+     /* order: 3; */
+    }
+</style>
+<body>
+    <div class="flexcontainer"> flex contai ner
+        <div class="flexboxitem flexitem-1"> flex box 1</div>
+        <div class="flexboxitem flexitem-2">flex box 2</div>
+        <div class="flexboxitem flexitem-3">flex box 3</div>
+        <div class="flexboxitem flexitem-4">flex box 4</div>
+    </div>
+</body>
+</html>
