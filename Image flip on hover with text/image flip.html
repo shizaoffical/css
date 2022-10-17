@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .hello{
+        margin-top: 5px;
+        text-align: center;
+        color: blue;
+    } .hello:hover{color: goldenrod;}
+    /*   home page image flip srction  css start*/
+      .container3{
+        margin: 3rem 1rem;
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr 2fr 2fr 2fr;
+         grid-gap: 5px ;
+      }
+      /* flip css */
+    .flip{
+        height: 300px;
+        width: 180px;
+        /* background-color: lavender; */
+        border: 2px solid rgba(128, 128, 128, 0.306);
+        perspective: 1000px;
+    } .flip:hover{border: 2px solid gray;}
+    /* flip inner css */
+     .flip-inner{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: all 1s ;
+        transform-style: preserve-3d;
+     }
+     /* flip inner hover css */
+        .flip .flip-inner:hover{
+            transform: rotatey(180deg);
+        }
+     .frontflip , .backflip{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+     }
+     .backflip{
+      
+        transform: rotatey(180deg);
+     }
+     /* image flip my text h5 ki css */
+     .fliph5{
+        display: flex;
+        justify-content: center;
+        color: hotpink;
+        margin-top: 1rem;
+     }.fliph5:hover{color: goldenrod;}
+      /* image flip my icon ki css */
+      .flipicon{
+       text-align: center;
+        color: goldenrod;
+        margin-top: 1rem;
+      }
+          /* image flip my price ki css */
+          .flipprice{
+            display: flex;
+             justify-content: center;
+             color:gray;
+          }.flipprice:hover{color: brown;}
+          /* home page image flip with text css end */
+        
+</style>
+<body>
+ <h2 class="hello">HELLO______ THIS IS MY SHOP</h2>
+ <H4 class="hello">please purchase something from here</H4>
+    <div class="container3">
+    <div class="flip">
+        <!-- 1 image -->
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/k1.jpeg"  width="180px" height="200px">
+                <h5 class="fliph5">PRINTED  CAP</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+              <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/k2.jpeg"  width="180px" height="200px">
+                <h5 class="fliph5">BLACK BAG</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>
+             <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+     <!-- 2 image -->
+    <div class="flip">
+       
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/k3.jpeg"  width="180px" height="200px">
+                <h5 class="fliph5">LETHER JACKET</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/k4.jpeg"  width="180px" height="200px">
+                <h5 class="fliph5">BLACK JACKET</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>
+              <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 3 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/k5.jpeg"  width="180px" height="200px">
+                <h5 class="fliph5">BLUE SHRT</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/k6.jpeg"  width="180px" height="200px">
+                <h5 class="fliph5">YELLOW  CAP</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star"></i>
+              <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 4 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/K12.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">YELLOW  SHIRT</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star"></i>
+                <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/K9.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">BLACK SHIRT</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 5 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/K11.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">WHITE SHIRT</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+              <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/K10.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">BALCK SHOES</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+                <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 6 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/m1.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">STYLISH MOBILE COVER</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/m2.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">STYLISH MOBILE COVER</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+        <!-- 7 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/m3.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">STYLISH MOBILE COVER</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/m4.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">STYLISH MOBILE COVER</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+                 <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+     <!-- 8 image -->
+    <div class="flip">
+       
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/m5.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">STYLISH MOBILE COVER</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/m6.jpg"  width="180px" height="200px">
+                <h5 class="fliph5" >STYLISH MOBILE COVER</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+             <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 9 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/b2.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">LATEST BAD STYLE</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/b3.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">LATEST BAD STYLE</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 10 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/b5.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">LATEST BAD STYLE</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/b4.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">LATEST BAD STYLE</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+                <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 11 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/b6.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">LATEST BAD STYLE</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/b7.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">LATEST BAD STYLE</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star "></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+                 <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+    </div>
+      <!-- 12 image -->
+      <div class="flip">
+        <div class="flip-inner">
+            <div class="frontflip">
+                <img src="/image/m7.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">STYLISH MOBILE COVER</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star flipicon"></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+              <h4 class="flipprice">$98.00</h4>
+            </div>
+            <div class="backflip">
+                <img src="/image/b7.jpg"  width="180px" height="200px">
+                <h5 class="fliph5">LATEST BAD STYLE</h5>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-starflipicon "></i>
+                <i class="fa-solid fa-star flipicon"></i>  <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+               <h4 class="flipprice">$98.00</h4>
+            </div>
+        </div>
+ </div>
+ <!-- home page image flip with text section -->
+
+</body>
+</html>
