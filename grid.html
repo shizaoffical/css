@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css crid</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<style>
+
+    
+
+.container{
+background-color: rgba(0, 0, 255, 0.678);
+height: 450px;
+/* width:900px ; */
+display: grid;
+/* grid-template-columns: 110px 110px 110px;
+grid-template-rows: 120px  120px 120px; */
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr); 
+/* grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 143px 1fr 43px ; */
+column-gap:15px ;
+row-gap:5px ;
+/* align-items: center; */
+place-items: center;
+}
+.item{
+  
+background-color: aqua;
+height: 122px; 
+ width: 122px;
+ 
+}
+.item1{
+    color: antiquewhite;
+    /* justify-self: center;
+    align-self: center; */
+    /* place-self: center; */
+}
+.header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color:white;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 / span 3;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100vw;
+}
+.footer{
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+    background-color: rgba(0, 0, 0, 0.714);
+width: 100vw;
+color: azure;
+font-size: 30px;
+text-align: center;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="item header"> this is a header</div>
+        <div class="item item1" ></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item footer "> footer</div>
+    </div>
+</body>
+</html>
